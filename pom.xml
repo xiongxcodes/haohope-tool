@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.xiongxcodes</groupId>
 	<artifactId>haohope-tool</artifactId>
-	<version>1.0.0-releases</version>
+	<version>1.0.1-RELEASES</version>
 	<packaging>jar</packaging>
-	<name>Haohope Build</name>
-	<url>https://github.com/xiongxcodes/haohope-common-dependencies</url>
+	<name>haohope-tool</name>
+	<url>https://github.com/xiongxcodes/haohope-tool</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -21,7 +21,7 @@
 			<dependency>
 				<groupId>com.github.xiongxcodes</groupId>
 				<artifactId>haohope-dependencies</artifactId>
-				<version>1.0.0-releases</version>
+				<version>1.0.1-RELEASES</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -85,9 +85,9 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:https://github.com/xiongxcodes/haohope-common-dependencies.git</connection>
-		<developerConnection>scm:git:https://github.com/xiongxcodes/haohope-common-dependencies.git</developerConnection>
-		<url>https://github.com/xiongxcodes/haohope-common-dependencies</url>
+		<connection>scm:git:https://github.com/xiongxcodes/haohope-tool.git</connection>
+		<developerConnection>scm:git:https://github.com/xiongxcodes/haohope-tool.git</developerConnection>
+		<url>https://github.com/xiongxcodes/haohope-tool</url>
 		<tag>HEAD</tag>
 	</scm>
 	<licenses>
