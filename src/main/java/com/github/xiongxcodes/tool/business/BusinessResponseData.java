@@ -184,7 +184,11 @@ public class BusinessResponseData<T> implements Serializable {
      * @return
      */
     public static BusinessResponseData<Throwable> fail(Throwable exception) {
-        return fail(exception, null);
+        return fail(exception, exception);
+    }
+
+    public static BusinessResponseData<Throwable> fail(String errcode, Throwable exception) {
+        return fail(errcode, exception, exception);
     }
 
     /**
@@ -203,5 +207,9 @@ public class BusinessResponseData<T> implements Serializable {
             return new BusinessResponseData<T>(BusinessExceptionEnum.UNKNOWERR.getErrcode(),
                 BusinessExceptionEnum.UNKNOWERR.getErrmsg(), data, false);
         }
+    }
+
+    public static <T> BusinessResponseData<T> fail(String errcode, Throwable exception, T data) {
+        return new BusinessResponseData<T>(errcode, exception.getMessage(), data, false);
     }
 }

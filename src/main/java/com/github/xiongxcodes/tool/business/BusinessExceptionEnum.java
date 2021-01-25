@@ -1,7 +1,8 @@
 package com.github.xiongxcodes.tool.business;
 
 public enum BusinessExceptionEnum {
-    SUCCESS("0", "ok"), UNKNOWERR("-1", "未知错误");
+    SUCCESS("000", "ok"), UNKNOWERR("-111", "未知错误"), NOTOKEN("111", "no token"), NOAUTH("222", "no auth"),
+    TOKENERR("333", "token error");
 
     private String errcode;
     private String errmsg;
